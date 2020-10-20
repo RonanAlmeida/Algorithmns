@@ -19,33 +19,6 @@ def getNthFib(n):
 
         return fibSum
 
-
-	# 1 [0,1] -> 0
-	# 2 [0,1] -> 1
-	# 3 [1,1] -> 1
-	# 4 [2,1] -> 2
-	# 5 [3,2]
-	# 6 [5,3]
-	# FIB-> 0 1 1 2 3 5 8 13
-	# N---> 1 2 3 4 5 6 7 
-
-
-# n=5
-"""
-Odd: 5/2 = 2.5 -> round up 3
-    3/2  -> 1.5 -> round up 
-
-5 -> 3 -> 1 
-
-4 -> 2 -> 0
-AAAAA 5 
- AAA  3
-  A   1
-
-AAAA
- AA
-  
-"""
 def printthis(n):
     # odd 
     # 5 4 3 2 1
@@ -75,5 +48,6 @@ def printthis(n):
     
 
 if __name__ == "__main__":
+
     print(printthis(5))
     # print(getNthFib(2))
