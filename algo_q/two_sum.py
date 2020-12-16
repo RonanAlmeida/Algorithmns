@@ -41,9 +41,29 @@ def two_sum3(array,targetSum):
         
     return[]
 
+def moveElementToEnd(array, toMove):
+	# Write your code here.		
+    left = 0
+    right = len(array)-1
+    while left < right:
+        if array[left] == toMove and array[right] != toMove:
+            array[left], array[right] = array[right], array[left]   
+            left+=1
+            right-=1
+            print('swap')
+        if array[left] == toMove and array[right] == toMove:
+            right-=1
+            
+        if array[left] != toMove and array[right] != toMove:
+            left+=1
+        print(left,right)
+        
+    return array
+
 if __name__ == "__main__":
-    print(two_sum([3,5,-4,8,11,1,-1,6],10))
-    print()
-    print(two_sum2([3,5,-4,8,11,1,-1,6],10))
-    print()
-    print(two_sum3([-1,-2,-3,-4,5,10,15],6))
+    print(moveElementToEnd([1,2,3,2,4,4,2],2))
+    # print(two_sum([3,5,-4,8,11,1,-1,6],10))
+    # print()
+    # print(two_sum2([3,5,-4,8,11,1,-1,6],10))
+    # print()
+    # print(two_sum3([-1,-2,-3,-4,5,10,15],6))

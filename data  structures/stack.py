@@ -43,6 +43,8 @@ if __name__ == "__main__":
     s.push(3)
     s.push(4)
     s.push(44)
+    s.push(232)
+    s.pop()
     print(s)
     print(s.is_empty())
     print(s.peek())
